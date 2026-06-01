@@ -26,7 +26,7 @@ Visualized the distribution using a Histogram (with KDE) and a Boxplot. The hist
 Generated a correlation matrix and visualized it using a Heatmap to understand how distances from different cities move together.
 * **Key Finding:** A strong positive correlation (**0.79**) was observed between `DistanceFromMumbai(Km)` and `DistanceFromChennai(Km)`.
 
-![Correlation Heatmap](Screenshots/Correlation%20Heatmap.png)
+![Correlation Heatmap](screenshots/Correlation%20Heatmap.png)
 
 ### 4. Anomaly Investigation & Data Cleaning
 Using targeted Pandas filtering, the exact row causing the anomaly was isolated:
@@ -34,12 +34,12 @@ Using targeted Pandas filtering, the exact row causing the anomaly was isolated:
 * **The Issue:** The distance from Mumbai was recorded as `6345.52 Km` and from Chennai as `7374.45 Km`. Geographically, India's total width is ~2900 Km, proving this was a severe data entry typographical error. Additionally, its `Location` value was missing (`NaN`).
 * **The Fix:** Filtered out rows with impossible distances (`> 6000 Km`), reducing the dataset from 53 to 52 rows and restoring the maximum distance to a logical **~2389 Km**.
 
-![Outlier Detection](Screenshots/Outlier%20Detection.png)
+![Outlier Detection](screenshots/Outlier%20Detection.png)
 
 ### 5. Multi-Variable Relationship Analysis (Pairplot)
 After cleaning the dataset, a `pairplot` was generated to inspect the pairwise distributions and scatter relationships across all numeric distance columns simultaneously.
 
-![Pairplot Relationships](Screenshots/Pairplot.png)
+![Pairplot Relationships](screenshots/Pairplot.png)
 
 ## 📊 Final Cleaned Data Summary
 * **Original Rows:** 53
