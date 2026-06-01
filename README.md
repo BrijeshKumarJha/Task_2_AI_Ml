@@ -20,7 +20,7 @@ Loaded the dataset and utilized `df.info()` and `df.describe()` to understand th
 ### 2. Outlier & Skewness Detection
 Visualized the distribution using a Histogram (with KDE) and a Boxplot. The histogram revealed a heavy **Right Skew (Positive Skew)**, and the boxplot clearly isolated the extreme geographic outlier far beyond the normal distribution.
 
-![Histogram and Boxplot](Screenshots/Histogram%20and%20Boxplot.png)
+![Histogram and Boxplot](screenshots/Histogram%20and%20Boxplot.png)
 
 ### 3. Correlation Analysis
 Generated a correlation matrix and visualized it using a Heatmap to understand how distances from different cities move together.
