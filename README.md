@@ -26,7 +26,7 @@ Visualized the distribution using a Histogram (with KDE) and a Boxplot. The hist
 Generated a correlation matrix and visualized it using a Heatmap to understand how distances from different cities move together.
 * **Key Finding:** A strong positive correlation (**0.79**) was observed between `DistanceFromMumbai(Km)` and `DistanceFromChennai(Km)`.
 
-![Correlation Heatmap](screenshots/Correlation%20Heatmap.png)
+![Correlation Heatmap](screenshots/Correlation%20heatmap.png)
 
 ### 4. Anomaly Investigation & Data Cleaning
 Using targeted Pandas filtering, the exact row causing the anomaly was isolated:
@@ -39,7 +39,7 @@ Using targeted Pandas filtering, the exact row causing the anomaly was isolated:
 ### 5. Multi-Variable Relationship Analysis (Pairplot)
 After cleaning the dataset, a `pairplot` was generated to inspect the pairwise distributions and scatter relationships across all numeric distance columns simultaneously.
 
-![Pairplot Relationships](screenshots/Pairplot.png)
+![Pairplot Relationships](screenshots/Pairplot%20feature%20relationships.png)
 
 ## 📊 Final Cleaned Data Summary
 * **Original Rows:** 53
